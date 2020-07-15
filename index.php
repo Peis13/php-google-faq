@@ -26,3 +26,21 @@ $faq = [
   ],
 ];
 ?>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Google FAQ</title>
+  </head>
+  <body>
+
+    <?php foreach ($faq as $indice => $domanda_risposta) { ?>
+      <h2><?php echo ($indice + 1) . '.' . $domanda_risposta['domanda']; ?></h2>
+
+      <?php foreach ($domanda_risposta['risposta'] as $paragrafo) { ?>
+        <p><?php echo $paragrafo; ?></p>
+      <?php } ?>
+    <?php } ?>
+  </body>
+</html>

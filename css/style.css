@@ -1,0 +1,115 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* FINE RESET */
+body {
+  font-family: 'Roboto', sans-serif;
+
+}
+/* STILI GENERALI */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu a {
+  color: inherit;
+}
+
+h2 {
+  padding-top: 50px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 15px;
+  line-height: 27px;
+  margin-top: 30px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+/* FINE STILI GENERALI */
+
+/* HEADER */
+header {
+  width: 100%;
+  color: #5f6368;
+  padding: 25px 25px 0;
+  border-bottom: 1px solid #979797;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  position: fixed;
+  top: 0;
+}
+
+header .titolo {
+  font-size: 22px;
+}
+
+.logo {
+  display: inline-block;
+}
+.navbar {
+  padding-top: 20px;
+}
+
+.header-menu li {
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.header-menu li a {
+  padding-bottom: 10px;
+}
+
+#email {
+  flex-grow: 1;
+  font-size: 14px;
+  margin-right: 0;
+  text-align: right;
+}
+
+#email .iniziale-nome {
+  width: 23px;
+  display: inline-block;
+}
+
+#email .iniziale-nome img {
+  border-radius: 50%;
+}
+
+.header-menu > .active a {
+  color: #3367d6;
+  border-bottom: 3px solid #3367d6;
+}
+/* FINE HEADER */
+
+/* MAIN */
+main {
+  margin-top: 100px;
+}
+.link-utili {
+  color: #3367d6;
+}
+/* FINE MAIN */

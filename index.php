@@ -35,11 +35,17 @@ $faq = [
   </head>
   <body>
 
+    <!-- Ciclo l'array $faq -->
     <?php foreach ($faq as $indice => $domanda_risposta) { ?>
       <h2><?php echo ($indice + 1) . '.' . $domanda_risposta['domanda']; ?></h2>
 
-      <?php foreach ($domanda_risposta['risposta'] as $paragrafo) { ?>
-        <p><?php echo $paragrafo; ?></p>
+      <!-- la chiave ['risposta'] esiste? && l'array a quella chiave è vuoto? -->
+      <?php if(isset($domanda_risposta['risposta']) && !empty($domanda_risposta['risposta'])) { ?>
+
+        <!-- Ciclo l'array [risposta] -->
+        <?php foreach ($domanda_risposta['risposta'] as $paragrafo) { ?>
+          <p><?php echo $paragrafo; ?></p>
+        <?php } ?>
       <?php } ?>
     <?php } ?>
   </body>
